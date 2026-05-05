@@ -36,7 +36,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark img {
 /* Floating Button (Left Side) */
   #adaButton {
     position: fixed;
-    right: 12px;
+    left: 12px;
     top: 95%;
     transform: translateY(-50%);
     /*background-color: #2e7d32;*/
@@ -67,7 +67,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark img {
   /* Popup Content (Left side panel style) */
   #adaContent {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     width: 350px;
     height: 100%;
