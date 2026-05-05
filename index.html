@@ -109,6 +109,40 @@ Curabitur ultrices ut elit eu venenatis. Etiam molestie mi vitae felis porttitor
 
 </section>
 
+<div id="adaButton"></div>
+
+<!-- Popup -->
+<div id="adaPopup">
+  <div id="adaContent">
+    <div id="closeBtn">✕</div>
+    <img id="adaImage" src="ada_widget.png" alt="ADA Widget Screenshot">
+  </div>
+</div>
+
+<script>
+  const button = document.getElementById("adaButton");
+  const popup = document.getElementById("adaPopup");
+  const closeBtn = document.getElementById("closeBtn");
+
+  button.onclick = () => {
+    popup.style.display = "block";
+  };
+
+  closeBtn.onclick = () => {
+    popup.style.display = "none";
+  };
+
+  // Optional: click outside to close
+  popup.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  };
+</script>
+
+
+
+
 <footer class="footer text-white text-center p-4">
   <p>© 2026 Choctaw Casinos Demo | CXone Digital Demo Environment</p>
 </footer>
